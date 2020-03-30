@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Pacman</title>
+  <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body onload="init()" onkeydown="movePacman(event), rotatePacman(event)">
+ <header>
+     <h3>Score: <span>0</span> </h3> 
+ </header> 
+ <div class="board-container"></div>
+
+<div id="gameOverModal" class="modal">
+  <div class="modal-content">
+    <h1>GAME OVER</h1>
+    <button>Play again?</button>
+  </div>
+</div>
+<div id="victoryModal" class="modal">
+  <div class="modal-content">
+    <h1>VICTORY</h1>
+    <button>Play again?</button>
+  </div>
+</div>
+
+
+
+ <script src="js/util.js"></script> 
+ <script src="js/pacman.js"></script>
+ <script src="js/ghost.js"></script>
+ <script src="js/game.js"></script>
+</body>
+</html>
+
